@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="pictures/StateSeal.jfif" alt="HawaiiSeal" />
+      </div>
+      <div class="nav-container">
+        <div class="search-bar">
+          <input type="text" placeholder="Search this site..." />
+          <button type="submit">Search</button>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="Honolulu.html">Honolulu</a>
+          <a href="Lihue.html">Lihue</a>
+          <a href="Kona.html">Kona</a>
+          <a href="ContactUs.html">Contact Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="breadcrumb-nav">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Contact Us</li>
+      </ol>
+    </nav>
+
+    <main class="form">
+      <form id="contact-form" action="" method="post">
+        <div class="form-group">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first_name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last_name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-email">Confirm Email Address:</label>
+          <input
+            type="email"
+            id="confirm-email"
+            name="confirm_email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="user-question">Your Question:</label>
+          <textarea
+            id="user-question"
+            name="user_question"
+            rows="5"
+            cols="40"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit-btn">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <script>
+      const contactForm = document.getElementById("contact-form");
+      const emailInput = document.getElementById("email");
+      const confirmEmailInput = document.getElementById("confirm-email");
+
+      contactForm.addEventListener("submit", function (event) {
+        if (emailInput.value.trim() !== confirmEmailInput.value.trim()) {
+          event.preventDefault();
+          alert("The email addresses do not match. Please re-enter them.");
+        }
+      });
+    </script>
+  </body>
+</html>

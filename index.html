@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Capital State</title>
+    <title>State of Hawaii</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <header>
       <div>
-        <img src="./pictures/StateSeal.jfif" alt="HawaiiSeal" />
+        <img src="pictures/StateSeal.jfif" alt="HawaiiSeal" />
       </div>
       <div class="nav-container">
         <div class="search-bar">
@@ -19,16 +18,20 @@
         </div>
         <nav>
           <a href="index.html">Home</a>
-          <a href="city1.html">City 1</a>
-          <a href="city2.html">City 2</a>
-          <a href="city3.html">City 3</a>
+          <a href="Honolulu.html">Honolulu</a>
+          <a href="Lihue.html">Lihue</a>
+          <a href="Kona.html">Kona</a>
+          <a href="ContactUs.html">Contact Us</a>
         </nav>
       </div>
     </header>
+
     <main>
       <section class="banner">
-        <h1><em>Discover the State of Hawaii</em></h1>
-        <img src="./pictures/StateSeal.jfif" alt="HawaiiSeal" />
+        <div>
+          <img src="./pictures/StateSeal.jfif" alt="HawaiiSeal" />
+          <h1><em>Discover the State of Hawaii</em></h1>
+        </div>
       </section>
       <section class="">
         <div class="container">
@@ -63,26 +66,40 @@
       <section class="city-navigation">
         <h2>Explore Our Cities</h2>
         <div class="city-grid">
-          <div class="city-card">
-            <img src="#" alt="Image of City 1" />
-            <h3>City 1 Name</h3>
-            <p>Brief 1-2 sentence intro about the city.</p>
-            <a href="#">Learn More;</a>
+          <div class="city-card" id="featured-city">
+            <img src="" alt="Image of City 1" />
+            <h3>Honolulu</h3>
+            <p>about the city.</p>
+            <a href="Honolulu.html">Learn More;</a>
           </div>
-          <div class="city-card">
-            <img src="#" alt="Image of City 2" />
-            <h3>City 2 Name</h3>
-            <p>Brief 1-2 sentence intro about the city.</p>
-            <a href="#">Learn More;</a>
+          <div class="city-card" id="featured-city">
+            <img src="" alt="Image of City 2" />
+            <h3>Lihue</h3>
+            <p>about the city.</p>
+            <a href="Lihue.html">Learn More;</a>
           </div>
-          <div class="city-card">
-            <img src="#" alt="Image of City 3" />
-            <h3>City 3 Name</h3>
-            <p>Brief 1-2 sentence intro about the city.</p>
-            <a href="#">Learn More;</a>
+          <div class="city-card" id="featured-city">
+            <img src="" alt="Image of City 3" />
+            <h3>Kona</h3>
+            <p>about the city.</p>
+            <a href="Kona.html">Learn More;</a>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <h3>Sources & References</h3>
+      <ul>
+        <li>
+          State of Hawaii Seal image retrieved from
+          <a
+            href="https://en.wikipedia.org/wiki/Seal_of_Hawaii"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Wikipedia</a
+          >.
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
